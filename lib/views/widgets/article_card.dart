@@ -12,7 +12,7 @@ class ArticleCard extends StatelessWidget {
       onTap: () => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const DetailsPage(),
+          builder: (context) => DetailsPage(article: article),
         ),
       ),
       child: Container(
