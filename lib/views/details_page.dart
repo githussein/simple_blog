@@ -11,6 +11,14 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
+  final TextEditingController _textEditingController = TextEditingController();
+
+  @override
+  void initState() {
+    _textEditingController.text = widget.article.content;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,9 +43,14 @@ class _DetailsPageState extends State<DetailsPage> {
                   Container(
                     padding:
                         const EdgeInsets.only(left: 20, right: 20, bottom: 20),
-                    child: Text(
-                      widget.article.content,
-                      style: const TextStyle(fontSize: 18),
+                    child: TextField(
+                      //todo implement onChanged
+                      onChanged: (newText) {},
+                      controller: _textEditingController,
+                      maxLines: 40,
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
+                      ),
                     ),
                   ),
                 ],
