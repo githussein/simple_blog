@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "233251124569",
+    "project_id": "blog-tacc",
+    "storage_bucket": "blog-tacc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233251124569:android:ac2d6f01cdfd0a74628848",
+        "android_client_info": {
+          "package_name": "dev.mhussein.coding_challenge_m_hussein"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233251124569-kl4hubig4i8abdsimns1ca4flngpkn9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKy1YCYMsQaz6pyk_jCUddBrwBhVMXeZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233251124569-kl4hubig4i8abdsimns1ca4flngpkn9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
