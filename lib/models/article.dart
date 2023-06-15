@@ -10,7 +10,7 @@ class Article {
   });
 
   static Article fromJson(Map<String, dynamic> json) => Article(
-        id: json['ido'] ?? '',
+        id: json['id'] ?? '',
         title: json['title'],
         content: json['content'],
       );

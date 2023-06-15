@@ -26,8 +26,7 @@ class _HomePageState extends State<HomePage> {
                 final articles = snapshot.data;
                 return ListView(
                   children: articles!
-                      .map((a) =>
-                          ArticleCard(title: a.title, content: a.content))
+                      .map((article) => ArticleCard(article: article))
                       .toList(),
                 );
               } else if (snapshot.hasError) {
