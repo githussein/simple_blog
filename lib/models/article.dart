@@ -9,8 +9,8 @@ class Article {
     required this.content,
   });
 
-  static Article fromJson(Map<String, dynamic> json) => Article(
-        id: json['id'] ?? '',
+  static Article fromJson(Map<String, dynamic> json, String id) => Article(
+        id: id,
         title: json['title'],
         content: json['content'],
       );
