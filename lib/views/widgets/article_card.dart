@@ -1,5 +1,6 @@
 import 'package:coding_challenge_m_hussein/models/article.dart';
 import 'package:coding_challenge_m_hussein/views/details_page.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ArticleCard extends StatelessWidget {
@@ -11,7 +12,7 @@ class ArticleCard extends StatelessWidget {
     return GestureDetector(
       onTap: () => Navigator.push(
         context,
-        MaterialPageRoute(
+        CupertinoPageRoute(
           builder: (context) => DetailsPage(article: article),
         ),
       ),
