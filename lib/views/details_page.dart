@@ -28,40 +28,35 @@ class _DetailsPageState extends State<DetailsPage> {
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: WillPopScope(
-          onWillPop: () async {
-            updateArticle();
-            return Future.value(true);
-          },
-          child: Scaffold(
-            body: SafeArea(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.all(20),
-                      child: Text(
-                        widget.article.title,
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                            fontSize: 32,
-                            letterSpacing: -0.03,
-                            fontWeight: FontWeight.w700),
-                      ),
+        child: Scaffold(
+          body: SafeArea(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    child: Text(
+                      widget.article.title,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          fontSize: 32,
+                          letterSpacing: -0.03,
+                          fontWeight: FontWeight.w700),
                     ),
-                    Container(
-                      padding: const EdgeInsets.only(
-                          left: 20, right: 20, bottom: 20),
-                      child: TextField(
-                        controller: _textEditingController,
-                        maxLines: 40,
-                        decoration: const InputDecoration(
-                          border: InputBorder.none,
-                        ),
+                  ),
+                  Container(
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                    child: TextField(
+                      controller: _textEditingController,
+                      maxLines: 40,
+                      decoration: const InputDecoration(
+                        border: InputBorder.none,
                       ),
+                      onChanged: (_) => updateArticle(),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
