@@ -51,7 +51,10 @@ class ArticleCard extends StatelessWidget {
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                color: Colors.blueGrey,
+                image: const DecorationImage(
+                  image: AssetImage('assets/images/thumbnail.jpg'),
+                  fit: BoxFit.fill,
+                ),
                 borderRadius: BorderRadius.circular(10.0),
               ), // Placeholder color for photo
               margin: const EdgeInsets.all(8),
