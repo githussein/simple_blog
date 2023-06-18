@@ -34,15 +34,20 @@ class ArticleCard extends StatelessWidget {
                     article.title,
                     maxLines: 2,
                     style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 22,
+                      fontSize: 20,
+                      fontFamily: 'Graphik',
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                   const SizedBox(height: 8),
                   Text(
                     article.content,
                     maxLines: 2,
-                    style: const TextStyle(fontSize: 16),
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontFamily: 'Graphik',
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ],
               ),

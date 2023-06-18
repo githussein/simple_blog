@@ -39,9 +39,11 @@ class _DetailsPageState extends State<DetailsPage> {
                       widget.article.title,
                       textAlign: TextAlign.center,
                       style: const TextStyle(
-                          fontSize: 32,
-                          letterSpacing: -0.03,
-                          fontWeight: FontWeight.w700),
+                        fontSize: 32,
+                        letterSpacing: -0.03,
+                        fontFamily: 'Graphik',
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                   ),
                   Container(
@@ -49,6 +51,10 @@ class _DetailsPageState extends State<DetailsPage> {
                         const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: TextField(
                       controller: _textEditingController,
+                      style: const TextStyle(
+                        fontFamily: 'Graphik',
+                        fontWeight: FontWeight.w400,
+                      ),
                       maxLines: 40,
                       decoration: const InputDecoration(
                         border: InputBorder.none,
