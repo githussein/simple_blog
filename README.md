@@ -2,15 +2,19 @@
 
 Coding challenge by Mohamed Hussein applying for the position of Flutter Developer.
 
-## Getting Started
+## Message to the reviewer
 
-This project is a starting point for a Flutter application.
+Dear code reviewer,
 
-A few resources to get you started if this is your first Flutter project:
+There are many scenarios where more changes could be done to the code. THings like deleting an
+article or make the image thumbnail editable, or using some package for state management like
+the Provider package, add a presentation layer, or even add some animations.
+I have already implemented many more during my previous projects for companies I worked at and
+some of them are already shared in my repositories. I just wanted to stick to all that were
+mentioned in your video for time management reasons. However, I would be glad to invest more
+time to add implement any extra version you'd want to see.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+I am looking forward to your feedback!
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Kind regards,
+Mohamed Hussein
